@@ -87,3 +87,26 @@ footer { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: 27px 0;
   .section { width: min(100% - 32px, 1180px); padding: 72px 0; } .hero { min-height: auto; grid-template-columns: 1fr; gap: 42px; padding-top: 45px; } .hero-profile { justify-self: center; width: min(100% - 25px, 380px); margin-bottom: 30px; } .photo-frame { height: 430px; box-shadow: 8px 8px 0 var(--mint); } .profile-caption { left: -13px; right: 13px; }
   .section-grid, .project-featured { grid-template-columns: 1fr; gap: 28px; } .skills-grid { grid-template-columns: 1fr; } .wide-card { grid-column: span 1; } .projects-heading { align-items: start; flex-direction: column; } .project-index { position: absolute; top: 20px; right: 20px; } .project-visual { min-height: 270px; } footer { width: min(100% - 32px, 1180px); }
 }
+/* Language switch */
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+.language-switch a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+  transition: 0.2s ease;
+}
+
+.language-switch a:hover {
+  color: var(--ink);
+}
+
+.language-switch a.active {
+  color: var(--ink);
+}
